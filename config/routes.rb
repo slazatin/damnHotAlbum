@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'damnhot/index'
+  
 
-  get 'damnhot/show'
+  resources :damnhot, only: [:index]
 
-  get 'damnhot/new'
+  root 'damnhot#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
