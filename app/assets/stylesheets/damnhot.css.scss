@@ -6,9 +6,13 @@ body, html {
   	margin:0 0 0 0;
   	overflow-y: hidden;
 
+  	::-webkit-scrollbar { 
+    display: none; 
+}
+
 	.content{
 	display: inline-block;
-	width: 4740px;
+	width: 5132px;
 	height:100%;
 
 		.images{
