@@ -8,3 +8,18 @@
 <%= mp3_player("http://github.com/sekrett/mp3_player/raw/master/test.mp3") %>
 
 </div>
+
+<script>
+$(document).ready(function () {
+    $(".images").hover(function () {
+        $(this).children("video")[0].play();
+    }, function () {
+        var el = $(this).children("video")[0];
+        console.log(el);
+        el.currentTime = 0;
+
+        el.pause();
+        
+    });
+});
+</script>
