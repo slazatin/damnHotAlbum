@@ -18,6 +18,12 @@ body, html {
 		.images{
 			display:inline-block;
 			float: left;
+
+			.weather {
+				width: 32%;
+				margin: 0 auto;
+				margin-top: -447px;
+			}
 		}
 		video#bgvid {
 	   position: fixed; right: 0; bottom: 0;
