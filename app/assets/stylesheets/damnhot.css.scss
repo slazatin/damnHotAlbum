@@ -2,37 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body, html {
-	// height: 100%;
+
+   
+	height: 100%;
   	margin:0 0 0 0;
   	overflow-y: hidden;
 
   	::-webkit-scrollbar { 
     display: none; 
-}
+	}
 
 	.content{
+	// cursor: url(http://cur.cursors-4u.net/food/images2/foo165.gif), pointer;
 	display: inline-block;
-	width: 5132px;
+	width: 4856px;
 	height:100%;
 
 		.images{
+			position:relative;
 			display:inline-block;
 			float: left;
+			height:100%;
 
-			.weather {
+			#weather {
+				background-image: url("http://mereman.files.wordpress.com/2012/04/lamp.png");
 				width: 32%;
 				margin: 0 auto;
-				margin-top: -447px;
+				margin-top: -55%;
+					#widget{
+						height:100%;
+						display:none;
+					}
+				}
 			}
-		}
-		video#bgvid {
-	   position: fixed; right: 0; bottom: 0;
-	   min-width: 100%; 
-	   min-height: 100%;  
-	   z-index: -100;
-	   background: url("") no-repeat;
-	   background-size: cover;
-		}
+		
+		// #video{
+	 //   position: fixed; 
+	 //   right: 0; bottom: 0;
+	 //   min-width: 100%; 
+	 //   min-height: 100%;  
+	 //   z-index: -100;
+	 //   background: url("") no-repeat;
+	 //   background-size: cover;
+		// }
 	}
 
 	.nav{
