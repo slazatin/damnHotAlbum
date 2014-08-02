@@ -8,7 +8,16 @@
 	<div class="images" onmouseover ="weatherDisappear()"><%= image_tag("lovechild.jpg", style:" width:100%; height:100%;")%></div>
 </div>
 <div class="nav">
-	<%= mp3_player("http://github.com/sekrett/mp3_player/raw/master/test.mp3") %>
+<object height="81" width="100%">
+  <param name="movie"
+    value="http://player.soundcloud.com/player.swf?url=https://soundcloud.com/hunnicomb&enable_api=true&auto_play=true&show_artwork=true&show_playcount=true&show_comments=false&sharing=false"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed
+    src="http://player.soundcloud.com/player.swf?url=https://soundcloud.com/hunnicomb&enable_api=true&auto_play=true&show_artwork=true&show_playcount=true&show_comments=false&sharing=false"
+    allowscriptaccess="always" height="81"  type="application/x-shockwave-flash" width="100%">
+  </embed>
+</object>
+	
 </div>
 
 <script>
